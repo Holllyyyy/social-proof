@@ -13,14 +13,23 @@ This is a solution to the [Social proof section challenge on Frontend Mentor](ht
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+
+![ss-1](https://user-images.githubusercontent.com/92860927/160254016-b0961ce8-ffc6-4ab9-ba0e-bd24a50afb58.png)
+
+![ss-2](https://user-images.githubusercontent.com/92860927/160254027-b6912a89-a13b-47ef-a476-fdff9868516f.png)
+
+![ss-3](https://user-images.githubusercontent.com/92860927/160254031-642ce127-8b3b-4030-af7c-f550248047cb.png)
+
+
+
 ## Overview
 
 Social proof section built with CSS Grid. Use of media query and make it responsive for small devices.
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://github.com/Holllyyyy/social-proof](https://github.com/Holllyyyy/social-proof)
+- Live Site URL: [https://cool-tapioca-5005d7.netlify.app/](https://cool-tapioca-5005d7.netlify.app/)
 
 ## My process
 
