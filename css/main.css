@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap");
+:root {
+  --purple: 300, 43%, 22%;
+  --pink: 333, 80%, 67%;
+  --dark-gray: 303, 10%, 53%;
+  --light-gray: 300, 24%, 96%;
+  --white: 0, 0%, 100%;
+
+  /*Font size*/
+
+  --fs-200: 0.875rem; /*14px*/
+  --fs-300: 3rem;
+  --fs-400: 1.875rem; /*30px*/
+
+  /* font-family*/
+  --ff--spartan: "Spartan", sans-serif;
+}
+
+/*-----Border box----*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*---------------------------------Margins ---------------------------*/
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+img {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 400;
+}
+/* -------------------body set up--------------------------*/
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+  font-family: var(--ff--spartan);
+  font-size: var(--fs-200);
+  background-color: hsl(var(--white));
+}
+
+/*--------------------Responsive/fluid image-----------------------------*/
+img {
+  max-width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+
+/* -----------------------------Utility classes-----------------------------------  */
+
+.container {
+  margin-inline: auto;
+  padding-inline: 2em;
+  max-width: 70rem;
+}
+
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+
+/* -----------Colors-------------*/
+
+.bg-purple {
+  background-color: hsl(var(--purple));
+  border-radius: 20px;
+}
+.bg-light {
+  background-color: hsl(var(--light-gray));
+  border-radius: 10px;
+}
+
+.text-white {
+  color: hsl(var(--white));
+}
+.text-purple {
+  color: hsl(var(--purple));
+}
+.text-dark-gray {
+  color: hsl(var(--dark-gray));
+}
+.text-pink {
+  color: hsl(var(--pink));
+}
+
+/*typoghrapy*/
+.ff-spartan {
+  font-family: var(--ff--spartan);
+}
+
+.fs-200 {
+  font-size: var(--fs-200);
+}
+.fs-300 {
+  font-size: var(--fs-300);
+}
+.fs-400 {
+  font-size: var(--fs-400);
+}
+
+/*Mobile view*/
+
+.section__one-heading > h1 {
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2rem;
+  font-family: var(--ff--spartan);
+  font-size: var(--fs-400);
+}
+.section__one-text {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  font-size: var(--fs-200);
+}
+.section__two {
+  margin-bottom: 2rem;
+}
+.section__two-heading > h2 {
+  font-size: var(--fs-200);
+  font-weight: 700;
+}
+.line + .line {
+  margin-top: 1rem;
+}
+.line {
+  text-align: center;
+}
+.star {
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.card + .card {
+  margin-top: 1rem;
+}
+
+.card {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr 2fr);
+}
+.card__img {
+  grid-column: 1/2;
+  grid-row: 2;
+}
+.card-heading {
+  grid-column: 3/7;
+  grid-row: 2;
+}
+.card-heading-one {
+  font-weight: 700;
+}
+.card-p {
+  margin-top: 1rem;
+  grid-column: 1/-1;
+  grid-row: 3;
+}
+
+/* desktop*/
+
+@media (min-width: 50rem) {
+  body {
+    display: grid;
+  }
+  .main {
+    grid-template-columns: repeat(2, auto);
+    gap: 3rem;
+  }
+  .section__one {
+    grid-column: 1/1;
+    grid-row: 2;
+    text-align: start;
+    width: 100%;
+  }
+  .section__one-heading > h1 {
+    margin-top: 0;
+    font-weight: 700;
+    font-size: var(--fs-300);
+    text-align: start;
+  }
+  .section__one-text {
+    font-weight: 500;
+    font-size: var(--fs-200);
+    text-align: start;
+    width: 80%;
+  }
+  .section__two {
+    grid-column: 2/5;
+    grid-row: 2;
+    padding: 2rem;
+  }
+  .section__two-heading > h2 {
+    font-size: var(--fs-200);
+    font-weight: 700;
+    text-align: start;
+  }
+  .line {
+    display: flex;
+    align-items: center;
+    padding: 0.5em;
+    width: 100%;
+  }
+  .line-two {
+    margin-left: 3rem;
+  }
+  .line-three {
+    margin-left: 6rem;
+  }
+
+  .section-cards {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+  .card-heading-one {
+    font-weight: 700;
+  }
+  .card-heading-two,
+  .card-text {
+    font-weight: 400;
+    font-size: var(--fs-200);
+  }
+  .card + .card {
+    margin-top: 0;
+  }
+  .card-one {
+    align-self: start;
+  }
+  .card-two {
+    align-self: center;
+  }
+  .card-three {
+    align-self: end;
+  }
+}
